@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+input,
+button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #2b7a0b, #5bb318, #7dce13);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #a5a5a5;
+  padding: 0.5rem;
+  width: 95%;
+}
+.inputs {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  font-size: 1.3rem;
+  padding: 9px 12px;
+  outline: none;
+  border-radius: 0;
+  width: 60%;
+  border: none;
+  border-bottom: 1px solid #2b7a0b;
+  transition: 0.3s;
+}
+input:focus {
+  border-bottom: 5px solid #2b7a0b;
+}
+button {
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #2b7a0b;
+  padding: 0.5rem;
+  margin: 0 7px;
+}
+.content {
+  margin: 7px 0;
+  width: 100%;
+  padding: 0.5rem;
+}
+.content header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h2 {
+  text-transform: capitalize;
+}
+.content img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.phonetic,
+.part_of_speech {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #a5a5a5;
+  margin: 5px 0;
+}
+.des {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.definitions {
+    height: 20vh;
+    overflow: auto;
+    margin-top: 7px;
+    border: 1px solid #a5a5a5;
+    padding: 0.5rem;
+    width: 100%;
+}
+.definition {
+  border: 1px solid #a5a5a5;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+@media only screen and (min-width:992px) {
+    .main {
+        width: 60%;
+    }
+}
